@@ -1,0 +1,13 @@
+/* Reset Vite defaults */
+body {
+  margin: 0;
+  display: block;
+  min-width: unset;
+  min-height: unset;
+}
+#root {
+  max-width: unset;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}

@@ -1,0 +1,120 @@
+.vlc-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #202020;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+.vlc-container.empty {
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+}
+
+.vlc-cone-placeholder {
+  font-size: 24px;
+  color: #555;
+  font-weight: bold;
+}
+
+.vlc-menu-bar {
+  display: flex;
+  background-color: #f0f0f0;
+  color: #000;
+  padding: 2px 8px;
+  font-size: 13px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.vlc-menu-bar span {
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.vlc-menu-bar span:hover {
+  background-color: #e5e5e5;
+}
+
+.vlc-video-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  overflow: hidden;
+  position: relative;
+}
+
+.vlc-video {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.vlc-controls {
+  background-color: #f0f0f0;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  padding: 4px 12px 8px 12px;
+  border-top: 1px solid #d9d9d9;
+}
+
+.vlc-timeline {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.vlc-seek-bar {
+  width: 100%;
+  cursor: pointer;
+  height: 4px;
+  accent-color: #0078d7;
+}
+
+.vlc-controls-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vlc-controls-left, .vlc-controls-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vlc-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 6px;
+  cursor: pointer;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.vlc-btn:hover {
+  background-color: #e5e5e5;
+  border-color: #dcdcdc;
+}
+
+.vlc-time {
+  font-size: 13px;
+  margin-left: 8px;
+  color: #333;
+}
+
+.vlc-vol-bar {
+  width: 80px;
+  cursor: pointer;
+  accent-color: #0078d7;
+  height: 4px;
+}
