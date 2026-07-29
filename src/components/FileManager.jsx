@@ -47,7 +47,7 @@ export function FileManager({ fileSystem, onPlayVideo }) {
     return (
       <div className="fm-open-btn-container">
         <button className="fm-open-btn" onClick={openDirectory}>
-          Open Course Folder (e.g. D:\Study\Mastering Modern Java Programming Beginner to Pro [2026])
+          Open Course Folder
         </button>
       </div>
     );
