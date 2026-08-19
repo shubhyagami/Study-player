@@ -6,27 +6,32 @@
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
   <img src="https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E" alt="Vite" />
   <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="MIT License" />
 </p>
 
-# Local Video Course Player 🎬📁
+# Local Video Course Player
 
-A web-based video player designed specifically for watching locally downloaded courses. Built with **React** and **Vite**, it leverages the modern **File System Access API** to seamlessly read your local folders directly in the browser—without uploading any files to a server.
+A web-based video player designed specifically for watching locally downloaded courses. Built with **React** and **Vite**, it leverages the modern **File System Access API** to read your local folders directly in the browser—without uploading any files to a server.
 
 ## ✨ Features
 
-*   **🗂️ Windows File Manager Replica:** The left pane mirrors the classic Windows File Manager UI. Browse through your course directories with breadcrumbs, sorting, and folder structures exactly as you would on your desktop.
-*   **🍿 VLC Player UI:** The right pane acts as your video player, styled accurately to resemble VLC Media Player. It includes custom controls for playback, a seek bar, volume control, and fullscreen capabilities.
-*   **🔒 Secure Local Access:** Videos are never uploaded to a backend. The app requests permission to view a folder on your PC, then streams the videos directly from your local disk utilizing secure Object URLs.
-*   **⚡ Lightning Fast:** Powered by Vite, ensuring rapid startup times and instantaneous interactions.
+*   **🗂️ File Explorer UI:** The left pane mirrors the classic Windows File Manager. Browse your course directories with breadcrumbs, sorting, and standard folder navigation.
+*   **🍿 VLC-inspired Player:** The right pane is styled to resemble VLC Media Player. It includes custom controls for playback, a seek bar, volume control, and fullscreen capabilities.
+*   **🔒 Secure Local Access:** Videos are never uploaded to a backend. The app requests permission to view a local directory, then streams the files securely using Object URLs.
+*   **⚡ Fast Performance:** Powered by Vite for rapid startup times and instantaneous interactions.
 
 ## 🚀 Getting Started
 
+### Prerequisites
+
+Ensure you have [Node.js](https://nodejs.org/) installed. A Chromium-based browser (like Google Chrome or Microsoft Edge) is required to support the File System Access API.
+
 ### Local Development
 
-1.  **Clone the repository** (if you haven't already):
+1.  **Clone the repository:**
     ```bash
-    git clone <your-repo-url>
-    cd "Study Player"
+    git clone https://github.com/shubhyagami/Study-player.git
+    cd Study-player
     ```
 
 2.  **Install dependencies:**
@@ -39,7 +44,8 @@ A web-based video player designed specifically for watching locally downloaded c
     npm run dev
     ```
 
-4.  **Open your browser:** Navigate to `http://localhost:5173`. Click **Open Course Folder**, select your local video directory (e.g., `D:\Study\Mastering Modern Java Programming`), and grant the browser permission to view the files. Double-click any folder to navigate, and double-click any video to play it.
+4.  **Usage:**
+    Open your browser to `http://localhost:5173`. Click **Open Course Folder** and select your local video directory (e.g., `D:\Study\Course Name`). Grant the browser permission to view the files. Double-click any folder to navigate, and double-click any video to play it.
 
 ### 🌐 Deploying to Vercel
 
@@ -51,7 +57,7 @@ This project is pre-configured for Vercel deployment with a `vercel.json` file t
 4.  Vercel will automatically detect the Vite framework. Keep the default settings (`npm run build` and `dist` output).
 5.  Click **Deploy**.
 
-> **Note:** The File System Access API requires a secure context. Because Vercel automatically provisions HTTPS for your deployments, the API will work securely in production.
+> **Note:** The File System Access API requires a secure context (HTTPS). Vercel automatically provisions HTTPS for your deployments, so the API will work securely in production.
 
 ## 🛠️ Tech Stack
 
