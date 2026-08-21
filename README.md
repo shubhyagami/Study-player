@@ -12,7 +12,7 @@
 
 # Study Player
 
-A web-based video player tailored for watching locally downloaded courses. Built with **React** and **Vite**, it leverages the modern **File System Access API** to read local directories directly in the browser without uploading files to a server. All video processing is handled client-side.
+A web-based video player tailored for watching locally downloaded courses. Built with **React** and **Vite**, Study Player leverages the modern **File System Access API** to read local directories directly in the browser. Because all file processing is handled entirely client-side, your videos are never uploaded to a server.
 
 ## ✨ Features
 
@@ -25,7 +25,7 @@ A web-based video player tailored for watching locally downloaded courses. Built
 
 ### Prerequisites
 
-Ensure you have [Node.js](https://nodejs.org/) installed. A Chromium-based browser (like Google Chrome or Microsoft Edge) is required to support the File System Access API.
+Ensure you have [Node.js](https://nodejs.org/) installed. A Chromium-based browser (such as Google Chrome or Microsoft Edge) is required to support the File System Access API.
 
 ### Local Development
 
@@ -66,6 +66,11 @@ This project is pre-configured for Vercel deployment with a `vercel.json` file t
 *   **[Vite](https://vitejs.dev/):** Build Tool & Dev Server
 *   **[Lucide React](https://lucide.dev/):** High-quality SVG Icons
 *   **[Date-Fns](https://date-fns.org/):** Reliable Date Formatting
+
+## 📋 Changelog
+
+*   **August 2026:** Cleaned up project documentation and standardized local development workflows. 
+*   **Initial Release:** Implemented core file explorer UI, VLC-inspired playback controls, and secure local file streaming via the File System Access API.
 
 ## 📝 License
 
