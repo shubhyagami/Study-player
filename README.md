@@ -9,32 +9,36 @@ A lightweight local video course player built with React and Vite.
 
 ## Description
 
-Study Player lets you watch locally downloaded courses in a familiar Windows‑style file explorer with a VLC‑inspired playback interface. Videos are streamed securely via object URLs, so no files are uploaded to any backend.
+Study Player lets you watch locally downloaded courses through a familiar Windows‑style file explorer with a VLC‑inspired playback interface. Videos are streamed securely via object URLs, so no files are uploaded to any backend.
 
 ## Features
 
-- **File Explorer UI**: Windows‑like navigation with breadcrumbs, sorting, and folder expansion.
-- **VLC‑style Player**: Custom controls featuring a seek bar, volume slider, and fullscreen support.
-- **Secure Local Playback**: Uses object URLs; no uploads or external storage required.
-- **Minimal dependencies**: React 18, Vite, Lucide React icons, and date‑fns for formatting.
+- **File Explorer UI** – Windows‑like navigation with breadcrumbs, sorting, and folder expansion.  
+- **VLC‑style Player** – Custom controls including a seek bar, volume slider, and fullscreen support.  
+- **Secure Local Playback** – Uses object URLs; no uploads or external storage required.  
+- **Minimal dependencies** – React 18, Vite, Lucide React icons, and date‑fns for formatting.
+
+## Prerequisites
+
+- Node.js ≥ 18  
+- A Chromium‑based browser (e.g., Chrome or Edge)
 
 ## Getting Started
 
-1. Install Node.js (≥ 18) and a Chromium‑based browser (e.g., Chrome or Edge).  
-2. Clone the repository:  
+1. Clone the repository:  
    ```bash
    git clone https://github.com/shubhyagami/Study-player.git
    cd Study-player
    ```  
-3. Install dependencies:  
+2. Install dependencies:  
    ```bash
    npm ci
    ```  
-4. Start the development server:  
+3. Start the development server:  
    ```bash
    npm run dev
    ```  
-5. Open the URL shown in the terminal (typically `http://localhost:5173`).  
+4. Open the URL shown in the terminal (typically `http://localhost:5173`).  
    - Click **Open Course Folder**, select your video directory, grant permission, and double‑click a video to play it.
 
 ## Deploy to Vercel
