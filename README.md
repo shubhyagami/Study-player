@@ -9,7 +9,7 @@ A lightweight local video course player built with React and Vite.
 
 ## Description
 
-Study Player lets you watch locally downloaded courses through a familiar Windows‑style file explorer with a VLC‑inspired playback interface. Videos are streamed securely via object URLs, so no files are uploaded to any backend.
+Study Player lets you watch locally downloaded courses through an interface that mimics Windows file explorer, paired with VLC‑style playback controls. Videos are streamed securely via object URLs, ensuring no files are uploaded to any backend.
 
 ## Features
 
@@ -54,7 +54,7 @@ Study Player lets you watch locally downloaded courses through a familiar Window
 - **React 18** – UI framework  
 - **Vite** – Build tool and dev server  
 - **Lucide React** – Icon library  
-- **date‑fns** – Date formatting utilities
+- **date‑fns** – Date formatting utilities  
 
 ## License
 
