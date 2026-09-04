@@ -1,13 +1,14 @@
 # Study Player
 
-A lightweight, browser‑based video player that mimics a desktop file explorer.  
-Open a folder on your machine, browse the contents, and play video files locally – no uploads, no cloud calls, just an object URL.
+A lightweight, browser‑based video player that behaves like a desktop file explorer.  
+Open a folder on your local machine, navigate its contents, and play video files directly in the browser – no uploads, no cloud calls, just an object URL.
 
 ![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
-![React 18.2](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react)
-![Vite 5.2](https://img.shields.io/badge/Vite-5.2.0-B73BFE?logo=vite)
+![React 18](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react)
+![Vite 5](https://img.shields.io/badge/Vite-5.2.0-B73BFE?logo=vite)
 ![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?logo=vercel)
 ![CI Status](https://github.com/shubhyagami/Study-player/actions/workflows/ci.yml/badge.svg)
+![Last Commit](https://img.shields.io/github/last-commit/shubhyagami/Study-player?style=flat)
 
 ---
 
@@ -25,22 +26,22 @@ npm ci
 npm run dev
 ```
 
-Open <http://localhost:5173>, click **Open Course Folder**, choose a folder containing video files, then double‑click a file to play.
+Open <http://localhost:5173> in your browser. Click **Open Course Folder**, choose a folder that contains video files, then double‑click a file to start playing.
 
 ---
 
 ## Features
 
-| Feature | What it does |
-|---------|--------------|
-| File Explorer | Breadcrumb navigation, collapsible folders, sortable list (name, size, date). |
-| Media Controls | Seek bar, volume, fullscreen, playback speed, skip buttons. |
-| Secure Playback | Streams directly from a browser‑generated object URL; files never leave the machine. |
-| Minimal Bundle | Built with React 18, Vite, Lucide React icons, and date‑fns. |
+| Feature        | Description |
+|----------------|-------------|
+| File Explorer  | Breadcrumb navigation, collapsible folders, sortable list (by name, size, date). |
+| Media Controls | Seek bar, volume slider, fullscreen toggle, playback speed, skip buttons. |
+| Local Playback | Streams from a browser‑generated object URL; files never leave the machine. |
+| Light Bundle   | Built with React 18, Vite, Lucide React icons, and date‑fns. |
 
 ---
 
-## Development
+## Running the Project
 
 | Action | Command |
 |--------|---------|
@@ -49,7 +50,7 @@ Open <http://localhost:5173>, click **Open Course Folder**, choose a folder cont
 | Run tests | `npm test` |
 | Lint & format | `npm run lint` |
 
-All commits should follow the existing style guidelines. Pull requests undergo review for quality and consistency.
+All commits should follow the existing style guidelines. Pull requests are reviewed for quality and consistency.
 
 ---
 
@@ -78,7 +79,7 @@ The site will be live at the Vercel‑generated URL.
 
 ## Contributing
 
-Pull requests are welcome. Please keep the code clean, follow existing style conventions, and add tests where appropriate. All contributions will be reviewed for quality and consistency.
+Pull requests are welcome. Please keep the code clean, follow the existing style conventions, and add tests where appropriate. All contributions will be reviewed for quality and consistency.
 
 ---
 
@@ -90,5 +91,5 @@ MIT © [shubhyagami](https://github.com/shubhyagami)
 
 ## Changelog
 
-- **2026‑09** – Minor bug fixes, badge updates.  
-- **2026‑08** – Documentation overhaul, clarified dev workflow, UI refinements.
+- **2026‑09‑04** – Minor bug fixes, badge updates.  
+- **2026‑08‑20** – Documentation overhaul, clarified dev workflow, UI refinements.
