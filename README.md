@@ -1,6 +1,6 @@
 # Study Player
 
-A lightweight, browser‑based video player that mimics a desktop explorer.  
+A lightweight, browser‑based video player that mimics a desktop file explorer.  
 Open a folder on your machine, browse the contents, and play video files locally – no uploads, no cloud calls, just an object URL.
 
 ![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
@@ -11,49 +11,45 @@ Open a folder on your machine, browse the contents, and play video files locally
 
 ---
 
-## Getting Started
+## Quick Start
 
-1. **Clone the repo**  
-   ```bash
-   git clone https://github.com/shubhyagami/Study-player.git
-   cd Study-player
-   ```
+```bash
+# Clone the repository
+git clone https://github.com/shubhyagami/Study-player.git
+cd Study-player
 
-2. **Install dependencies**  
-   ```bash
-   npm ci
-   ```
+# Install dependencies
+npm ci
 
-3. **Start the dev server**  
-   ```bash
-   npm run dev
-   ```
+# Run in development mode
+npm run dev
+```
 
-   Open `http://localhost:5173`, click **Open Course Folder**, pick a folder containing video files, and double‑click a file to play.
+Open <http://localhost:5173>, click **Open Course Folder**, choose a folder containing video files, then double‑click a file to play.
 
 ---
 
 ## Features
 
-| Feature | Description |
-|---------|-------------|
+| Feature | What it does |
+|---------|--------------|
 | File Explorer | Breadcrumb navigation, collapsible folders, sortable list (name, size, date). |
-| Media Controls | Seek bar, volume, fullscreen, playback speed, skip controls. |
-| Secure Local Playback | Streams from a browser‑generated object URL; files never leave the machine. |
-| Minimal Footprint | Built with React 18, Vite, Lucide React icons, and date‑fns. |
+| Media Controls | Seek bar, volume, fullscreen, playback speed, skip buttons. |
+| Secure Playback | Streams directly from a browser‑generated object URL; files never leave the machine. |
+| Minimal Bundle | Built with React 18, Vite, Lucide React icons, and date‑fns. |
 
 ---
 
 ## Development
 
-| Task | Command |
-|------|---------|
-| Production build | `npm run build` |
-| Preview build | `npm run preview` |
+| Action | Command |
+|--------|---------|
+| Build for production | `npm run build` |
+| Preview the build | `npm run preview` |
 | Run tests | `npm test` |
 | Lint & format | `npm run lint` |
 
-> Use clear, descriptive commit messages. Pull requests are reviewed against the existing style guidelines.
+All commits should follow the existing style guidelines. Pull requests undergo review for quality and consistency.
 
 ---
 
@@ -61,13 +57,13 @@ Open a folder on your machine, browse the contents, and play video files locally
 
 ### Vercel
 
-1. Push the repository to GitHub.  
+1. Push the repo to GitHub.  
 2. Sign in to [Vercel](https://vercel.com).  
-3. Click **Add New Project** → **Import GitHub** → choose this repo.  
-4. Vercel auto‑detects Vite; keep the default commands (`npm run build`, output: `dist`).  
+3. Click **New Project → Import GitHub → choose this repo**.  
+4. Vercel auto‑detects Vite; keep the defaults (`npm run build`, output: `dist`).  
 5. Click **Deploy**.
 
-The app will be available at a Vercel‑hosted URL.
+The site will be live at the Vercel‑generated URL.
 
 ---
 
@@ -77,6 +73,12 @@ The app will be available at a Vercel‑hosted URL.
 - **Vite 5.2** – Build tool & dev server
 - **Lucide React** – Icon set
 - **date-fns** – Date formatting
+
+---
+
+## Contributing
+
+Pull requests are welcome. Please keep the code clean, follow existing style conventions, and add tests where appropriate. All contributions will be reviewed for quality and consistency.
 
 ---
 
@@ -90,9 +92,3 @@ MIT © [shubhyagami](https://github.com/shubhyagami)
 
 - **2026‑09** – Minor bug fixes, badge updates.  
 - **2026‑08** – Documentation overhaul, clarified dev workflow, UI refinements.
-
----
-
-## Contributing
-
-Pull requests are welcome! Please keep the code clean, follow existing style conventions, and add tests where appropriate. All contributions will be reviewed by the maintainer for quality and consistency.
