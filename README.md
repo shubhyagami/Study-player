@@ -1,10 +1,10 @@
-# Study‑Player
+# Study-player
 
-A lightweight, browser‑based video player that lets you open a folder on your machine, browse its contents, and stream the videos locally—no uploads or cloud services needed.
+A lightweight, browser‑based video player that lets you open a folder on your machine, browse its contents, and stream the videos locally—no uploads or cloud services required.
 
-> **Live demo** – https://study-player.vercel.app
+> **Live demo** – https://study-player.vercel.app  
 
-## Badges
+## 📦 Badges
 
 ![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)  
 ![React 18](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react)  
@@ -14,79 +14,79 @@ A lightweight, browser‑based video player that lets you open a folder on your 
 ![Coverage](https://img.shields.io/badge/Coverage-100%25-brightgreen)  
 ![Last Commit](https://img.shields.io/github/last-commit/shubhyagami/Study-player?style=flat)
 
-## Quick start
+## 🚀 Quick start
 
 ```bash
-git clone https://github.com/shubhyagami/Study-player
+git clone https://github.com/shubhyagami/Study-player.git
 cd Study-player
 npm ci
 npm run dev
 ```
 
-Open <http://localhost:5173> in your browser, click **Open Course Folder**, choose a folder that contains video files, then double‑click a file to start playing.
+Open <http://localhost:5173> in your browser, click **Open Folder**, pick a directory that contains video files, then double‑click a file to play it.
 
-## Features
+## ✨ Features
 
-| Feature | Description |
-|---------|-------------|
-| **Local browsing** | Breadcrumb navigation, folder expansion/collapse, sortable tables (name, size, date). |
-| **Video playback** | Standard controls: seek bar, volume, full‑screen, playback speed, skip forward/backward. |
-| **Zero‑upload** | Files are streamed via `Object URL`s; nothing leaves your machine. |
-| **Small footprint** | ~120 kB gzipped bundle (React 18 + Vite + Lucide React). |
-| **Theme toggle** | Light / dark mode. |
-| **Responsive** | Works on desktop and tablet screens. |
+| 📌 Feature          | Description |
+|----------------------|-------------|
+| **Local browsing**  | Breadcrumb navigation, folder tree, sortable tables (name, size, date). |
+| **Video playback**  | Standard controls: seek bar, volume, full‑screen, speed, skip forward/backward. |
+| **Zero‑upload**      | Files are streamed via `ObjectURL`s; nothing leaves your computer. |
+| **Lightweight**      | ≈120 kB gzipped bundle (React 18 + Vite + Lucide React). |
+| **Theme toggle**    | Light / dark mode. |
+| **Responsive**       | Works on desktop and tablet screens. |
 
-## How to use
+## 💡 How it works
 
-1. **Open Folder** – Click **Open Course Folder**; the file picker accepts directories only.  
-2. **Navigate** – Use the breadcrumb to view the current path and jump to parent directories. Click a folder icon to collapse or expand.  
-3. **Play** – Double‑click a video file, or click the play icon next to it.  
-4. **Controls** – Use the seek bar, volume slider, full‑screen toggle, speed selector, and skip buttons.  
+1. **Open Folder** – The file picker accepts directories only.  
+2. **Navigate** – Use the breadcrumb trail to see the current path and jump to parent folders. Click folder icons to expand or collapse.  
+3. **Play** – Double‑click a video file or click the play icon next to it.  
+4. **Controls** – Interact with the seek bar, volume slider, full‑screen toggle, speed selector, and skip buttons.  
 5. **Sorting** – Click a column header to sort by name, size, or date.
 
-## Development
+## 🛠️ Development
 
 | Action | Command |
 |--------|---------|
-| Install | `npm ci` |
-| Dev server | `npm run dev` |
-| Build | `npm run build` |
-| Preview built app | `npm run preview` |
-| Unit tests | `npm test` |
-| Lint | `npm run lint` |
+| Install dependencies | `npm ci` |
+| Start dev server      | `npm run dev` |
+| Build for production | `npm run build` |
+| Preview production build | `npm run preview` |
+| Run unit tests | `npm test` |
+| Lint and format | `npm run lint` |
 
-> Keep your pull requests focused. Run linting and tests before submitting.
+> Make sure linting and tests pass before submitting a pull request.
 
-## Deploy to Vercel
+## ☁️ Deploy to Vercel
 
 1. Push the repo to GitHub.  
-2. Go to <https://vercel.com> → **New Project** → **Import GitHub** → `Study-player`.  
-3. Accept defaults (`npm run build` as build command, `dist` as output folder).  
-4. Click **Deploy**. The preview URL appears in the dashboard.
+2. In Vercel, select **New Project** → **Import GitHub** → `Study-player`.  
+3. Keep the defaults (`npm run build` as the build command, `dist` as the output folder).  
+4. Click **Deploy**. The preview URL will appear in the dashboard.
 
-## Tech Stack
+## 🧰 Tech stack
 
-- **React 18** – UI framework  
-- **Vite 5** – Build tool & dev server  
+- **React 18** – UI library  
+- **Vite 5** – Bundler & dev server  
 - **Lucide React** – Icon set  
 - **date‑fns** – Date formatting  
-- **Jest** – Testing framework  
-- **Prettier + ESLint** – Code formatting & linting
+- **Jest** – Unit testing framework  
+- **Prettier + ESLint** – Code formatting and linting
 
-## Contributing
+## 🤝 Contributing
 
-Pull requests are welcome. Please follow these guidelines:
+Pull requests are welcome. Please:
 
-1. Adhere to Prettier and ESLint rules.  
-2. Add unit tests for new or changed functionality.  
-3. Write clear, concise commit messages.  
-4. Update the changelog after adding features or fixing bugs.
+1. Follow Prettier and ESLint rules.  
+2. Add unit tests for any new or changed features.  
+3. Write clear, descriptive commit messages.  
+4. Update the changelog after a release.
 
-## License
+## 📜 License
 
 MIT © [shubhyagami](https://github.com/shubhyagami)
 
-## Changelog
+## 🗒️ Changelog
 
 - **2026‑09‑04** – Minor bug fixes, badge updates.  
 - **2026‑08‑20** – Documentation overhaul, clarified dev workflow, UI refinements.
