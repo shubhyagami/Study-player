@@ -1,6 +1,6 @@
-# Study-player
+# Study Player
 
-A lightweight, browser‑based video player that lets you open a local folder, browse its contents, and stream videos directly from your machine – no uploads or cloud services are involved.
+A lightweight, browser-based video player that lets you open a local folder, browse its contents, and stream videos directly from your machine. Nothing is uploaded, and no cloud service is required.
 
 [Live Demo](https://study-player.vercel.app)
 
@@ -13,58 +13,63 @@ A lightweight, browser‑based video player that lets you open a local folder, b
 
 ## Features
 
-- **Local file access** – Stream videos with `ObjectURL`; files never leave your computer.  
-- **Intuitive navigation** – Folder tree view with breadcrumb trail.  
-- **Custom playback controls** – Seek bar, volume, full‑screen, speed, skip forward/backward.  
-- **File sorting** – Sort by name, size, or date.  
-- **Light/dark mode** – Theme toggle.  
-- **Tiny bundle** – ~120 kB gzipped.
+- **Local playback** – Stream videos with `ObjectURL`; files never leave your computer.
+- **Folder navigation** – Browse with a folder tree and breadcrumb trail.
+- **Custom controls** – Seek bar, volume, fullscreen, playback speed, and skip forward/backward.
+- **Sorting** – Sort files by name, size, or date.
+- **Theme toggle** – Switch between light and dark mode.
+- **Small bundle** – About 120 kB gzipped.
 
-## Quick start
+## Getting Started
 
-```bash
-git clone https://github.com/shubhyagami/Study-player.git
-cd Study-player
-npm ci
-npm run dev
-```
+### Prerequisites
 
-Open `http://localhost:5173`, click **Open Folder**, select a video directory, and double‑click a file to play.
+- Node.js 18 or newer
+- npm
+
+### Quick start
+
+    git clone https://github.com/shubhyagami/Study-player.git
+    cd Study-player
+    npm ci
+    npm run dev
+
+Open `http://localhost:5173`, click **Open Folder**, select a video directory, and double-click a file to play.
 
 ## Development
 
-| Action | Command | Description |
-|--------|--------|-------------|
-| Install dependencies | `npm ci` | Install exact versions |
-| Start dev server | `npm run dev` | Hot‑reload development server |
-| Build production | `npm run build` | Generate static assets |
+| Task | Command | Description |
+| --- | --- | --- |
+| Install dependencies | `npm ci` | Install exact versions from the lockfile |
+| Start dev server | `npm run dev` | Start Vite with hot reload |
+| Build production | `npm run build` | Generate static assets in `dist/` |
 | Preview build | `npm run preview` | Serve the production build locally |
-| Run tests | `npm test` | Execute Jest test suite |
-| Lint & format | `npm run lint` | Run ESLint & Prettier |
+| Run tests | `npm test` | Execute the Jest test suite |
+| Lint and format | `npm run lint` | Run ESLint and Prettier checks |
 
-## Tech stack
+## Tech Stack
 
-- **Framework** – React 18  
-- **Bundler** – Vite 5  
-- **Icons** – Lucide React  
-- **Utilities** – date-fns  
-- **Testing** – Jest + React Testing Library  
-- **Linting** – ESLint, Prettier
+- **Framework:** React 18
+- **Bundler:** Vite 5
+- **Icons:** Lucide React
+- **Utilities:** date-fns
+- **Testing:** Jest + React Testing Library
+- **Linting:** ESLint, Prettier
 
 ## Deployment
 
-The repo is ready for Vercel.
+The project is ready to deploy on Vercel.
 
-1. Push changes to GitHub.  
-2. In Vercel, create a new project and import the repository.  
-3. Use the default build command (`npm run build`) and output directory (`dist`).  
+1. Push changes to GitHub.
+2. In Vercel, create a new project and import the repository.
+3. Keep the default build command (`npm run build`) and output directory (`dist`).
 4. Deploy.
 
 ## Contributing
 
-1. Fork the repo and create a feature branch.  
-2. Keep the code linted (`npm run lint`).  
-3. Add tests for any new or changed functionality.  
+1. Fork the repository and create a feature branch.
+2. Keep the code linted with `npm run lint`.
+3. Add tests for new or changed functionality.
 4. Submit a pull request with a clear description.
 
 ## License
@@ -73,6 +78,7 @@ MIT – see the [LICENSE](LICENSE) file.
 
 ## Changelog
 
-- **2026‑09‑19** – README cleanup and documentation updates.  
-- **2026‑09‑04** – Bug fixes and badge updates.  
-- **2026‑08‑20** – UI refinements and workflow improvements.
+- **2026-09-24** – Documentation cleanup and README refresh.
+- **2026-09-19** – README cleanup and documentation updates.
+- **2026-09-04** – Bug fixes and badge updates.
+- **2026-08-20** – UI refinements and workflow improvements.
