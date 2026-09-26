@@ -1,14 +1,4 @@
-[K[2m  [2mmodel deepseek-ai/deepseek-v4.1-flash failed, trying next...[0m[0m
 # Study Player
-
-A browser‑based video player that lets you open a local folder, browse its contents, and stream videos directly from your machine.  
-All files stay on your device – no upload, no cloud service.
-
-[Live demo](https://study-player.vercel.app)
-
----
-
-## Badges
 
 ![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)
 ![React](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react&style=flat-square)
@@ -17,20 +7,22 @@ All files stay on your device – no upload, no cloud service.
 ![CI](https://github.com/shubhyagami/Study-player/actions/workflows/ci.yml/badge.svg?style=flat-square)
 ![Coverage](https://img.shields.io/badge/Coverage-100%25-brightgreen?style=flat-square)
 
----
+A lightweight, browser-based video player for your local video library. Open a folder from your machine, browse its contents, and play videos directly — nothing is uploaded and no cloud service is involved.
+
+**[Live demo](https://study-player.vercel.app)**
 
 ## Features
 
-- **Local playback** – Uses `ObjectURL`; the video never leaves your computer.  
-- **Folder navigation** – Browse the directory tree and use a breadcrumb trail.  
-- **Custom controls** – Seek bar, volume, fullscreen, playback speed, skip forward/backward.  
-- **Sorting** – Order files by name, size, or date.  
-- **Theme toggle** – Light or dark mode.  
-- **Small bundle** – ~120 kB gzipped.
+- **Local playback** — Videos are played through object URLs (`URL.createObjectURL`), so files never leave your device.
+- **Folder navigation** — Browse the directory tree with a breadcrumb trail.
+- **Custom controls** — Seek bar, volume, fullscreen, playback speed, and skip forward/backward.
+- **Sorting** — Order files by name, size, or date modified.
+- **Theme toggle** — Switch between light and dark mode.
+- **Small bundle** — ~120 kB gzipped.
 
----
+## Getting Started
 
-## Quick Start
+Requires Node.js 18+ and npm.
 
 ```bash
 git clone https://github.com/shubhyagami/Study-player.git
@@ -39,65 +31,53 @@ npm ci
 npm run dev
 ```
 
-Open `http://localhost:5173` in your browser, click **Open Folder**, choose a directory that contains video files, and double‑click a video to play it.
-
----
+Then open `http://localhost:5173`, click **Open Folder**, choose a directory that contains video files, and double-click a video to start playback.
 
 ## Development
 
-| Task             | Command             | Description                                 |
-|------------------|---------------------|---------------------------------------------|
-| Install          | `npm ci`            | Install exact dependency versions.           |
-| Dev server       | `npm run dev`       | Start Vite with hot‑reload.                 |
-| Production build | `npm run build`      | Generate static assets in `dist/`.          |
-| Preview build    | `npm run preview`   | Serve the production build locally.           |
-| Test             | `npm test`          | Run the Jest test suite.                     |
-| Lint & format    | `npm run lint`      | Run ESLint and Prettier checks.              |
-
----
+| Task             | Command           | Description                        |
+|------------------|-------------------|------------------------------------|
+| Install deps     | `npm ci`          | Install exact dependency versions  |
+| Dev server       | `npm run dev`     | Start Vite with hot reload         |
+| Production build | `npm run build`   | Generate static assets in `dist/`  |
+| Preview build    | `npm run preview` | Serve the production build locally |
+| Tests            | `npm test`        | Run the Jest test suite            |
+| Lint & format    | `npm run lint`    | Run ESLint and Prettier checks     |
 
 ## Tech Stack
 
-- **Framework** – React 18  
-- **Bundler** – Vite 5  
-- **Icons** – Lucide React  
-- **Utilities** – date‑fns  
-- **Testing** – Jest + React Testing Library  
-- **Linting** – ESLint + Prettier
-
----
+- **Framework:** React 18
+- **Bundler:** Vite 5
+- **Icons:** Lucide React
+- **Utilities:** date-fns
+- **Testing:** Jest + React Testing Library
+- **Linting:** ESLint + Prettier
 
 ## Deployment
 
-The project is ready for deployment on Vercel.  
-1. Push your changes to GitHub.  
-2. In Vercel, create a new project and import this repository.  
-3. Keep the default build command `npm run build` and output directory `dist`.  
-4. Hit **Deploy**.
+The project deploys to Vercel with no extra configuration:
 
----
+1. Push your changes to GitHub.
+2. In Vercel, create a new project and import this repository.
+3. Keep the default build command (`npm run build`) and output directory (`dist`).
+4. Click **Deploy**.
 
 ## Contributing
 
-1. Fork the repo and create a feature branch.  
-2. Keep the code linted (`npm run lint`).  
-3. Add tests for new or changed functionality.  
-4. Submit a pull request with a clear description.
+Bug reports, feature requests, and pull requests are all welcome.
 
-Bug reports, feature requests, and PRs are welcome.
-
----
+1. Fork the repository and create a feature branch.
+2. Keep the code linted with `npm run lint`.
+3. Add or update tests for new or changed functionality.
+4. Open a pull request with a clear description.
 
 ## License
 
-MIT – see the [LICENSE](LICENSE) file.
-
----
+Released under the [MIT License](LICENSE).
 
 ## Changelog
 
-- **2026‑09‑24** – Documentation cleanup, updated badges.  
-- **2026‑09‑04** – Bug fixes and workflow improvements.  
-- **2026‑08‑20** – UI refinements, workflow updates.  
-
----
+- **2026-09-26** — README cleanup and restructuring.
+- **2026-09-24** — Documentation cleanup, updated badges.
+- **2026-09-04** — Bug fixes and workflow improvements.
+- **2026-08-20** — UI refinements, workflow updates.
